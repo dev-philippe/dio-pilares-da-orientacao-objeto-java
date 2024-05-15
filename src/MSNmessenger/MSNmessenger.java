@@ -2,15 +2,17 @@ package MSNmessenger;
 
 public class MSNmessenger {
     public  void enviarMensagem(){
+        validarConectandoInternet();
         System.out.println("Enviando messagem");
+        salvarHistoricoMensaem();
     }
     public  void receberMensagem(){
         System.out.println("Recebendo mensagem");
     }
-    public  void validarConectandoInternet(){
+    private   void validarConectandoInternet(){
         System.out.println("Validando se está conectado a internet");
     }
-    public void salvarHistoricoMensaem(){
+    private void salvarHistoricoMensaem(){
         System.out.println("Salvando histórico de mensagem");
     }
 
